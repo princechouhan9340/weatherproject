@@ -35,14 +35,7 @@ app.get("*",(req,res) => {
 })
 
 
-// DECLARE  A DATABASE STRING URL----
-mongoose.connect("mongodb+srv://prince_chouhan9340:VmEz2U6wR9QeMWxw@cluster0.7obeg.mongodb.net/weatherweb-db?retryWrites=true&w=majority",
-{
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
-.then( () => console.log("mongoDB is connected"))
-.catch ( err => console.log(err))
+
 
 // LISTEN FOR INCOMING REQUESTS-----
 app.listen(process.env.PORT || 3000, function (){
